@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benefits of Regular Fitness Habits</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <img src="./images/logo.png" alt="Website Logo">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="join.html" class="cta-button">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Embrace Fitness for a Healthier, Happier Life</h1>
+        <p>Discover the many benefits of regular fitness habits for both body and mind.</p>
+        <button onclick="scrollToSection('#join')">Start Your Journey</button>
+    </section>
+    
+    <!-- Section 1: Physical Strength and Flexibility -->
+    <section class="zigzag-section" id="benefits">
+        <div class="content">
+            <h2>Boost Strength and Flexibility</h2>
+            <p>Regular exercise improves muscle strength, builds endurance, and enhances flexibility, allowing you to move better and feel stronger in your daily activities.</p>
+            <a href="ExploreExercises.html">Explore Exercises</a>
+        </div>
+        <div class="image">
+            <img src=https://images.stockcake.com/public/5/2/d/52d5e556-3342-49f8-8a56-af96f6128985_medium/graceful-sunset-leap-stockcake.jpg>
+        </div>
+    </section>
+    
+    <!-- Section 2: Increased Energy Levels -->
+    <section class="zigzag-section">
+        <div class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPFZZeaIvGWZmOu62gU3pipJBaR2jNGC0-ng&s" alt="Increased Energy Levels">
+        </div>
+        <div class="content">
+            <h2>Feel Energized Every Day</h2>
+            <p>Consistent physical activity boosts your energy by improving cardiovascular efficiency, helping you power through your day with less fatigue.</p>
+            <a href="SeeTipsforMoreEnergy.html">See Tips for More Energy</a>
+        </div>
+    </section>
+    
+    <!-- Section 3: Stress Reduction -->
+    <section class="zigzag-section">
+        <div class="content">
+            <h2>Reduce Stress and Boost Mood</h2>
+            <p>Exercise releases endorphins, which combat stress and promote relaxation, helping you feel more balanced and mentally resilient.</p>
+            <a href="LearnHow.html">Learn How</a>
+        </div>
+        <div class="image">
+            <img src="https://www.everydayyoga.com/cdn/shop/articles/yoga_1024x1024.jpg?v=1703853908" alt="Stress Reduction">
+        </div>
+    </section>
+    
+    <!-- Section 4: Disease Prevention -->
+    <section class="zigzag-section">
+        <div class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0gie8Vq8njGFCBZ4reBzrL11MV7Go3kINzA&s" alt="Disease Prevention">
+        </div>
+        <div class="content">
+            <h2>Lower Your Risk of Disease</h2>
+            <p>Regular physical activity supports immune function, reduces inflammation, and minimizes the risk of various chronic illnesses, including heart disease, diabetes, and more.</p>
+            <a href="FindOutMore.html">Find Out More</a>
+        </div>
+    </section>
+    
+    <!-- Section 5: Mental Health and Happiness -->
+    <section class="zigzag-section">
+        <div class="content">
+            <h2>Boost Mental Health and Happiness</h2>
+            <p>Exercise is a powerful tool for enhancing mental well-being, reducing symptoms of anxiety and depression, and increasing overall happiness.</p>
+            <a href="ExploreMentalHealthBenefits.html">Explore Mental Health Benefits</a>
+        </div>
+        <div class="image">
+            <img src="https://thumbs.dreamstime.com/b/happy-man-jumping-joy-peak-mountain-cliff-sunset-success-winner-happiness-barefoot-top-victory-91545340.jpg" alt="Mental Health and Happiness">
+        </div>
+    </section>
+    
+    <section class="cta-section" id="join">
+        <h2>Ready to Transform Your Life?</h2>
+        <p>Take the first step towards a healthier, happier you. Join us today!</p>
+        <a href="join.html" class="join-button">Join</a>
+    </section>
+    
+    <!-- JavaScript to handle scrolling -->
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.querySelector(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    
+    </body>
+</html>

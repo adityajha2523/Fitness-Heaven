@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See Tips for More Energy</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Tips Section Styling */
+        .energy-tips-section {
+            max-width: 1000px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .energy-tips-section h2 {
+            font-size: 2.5em;
+            color: #ff4c4c;
+            margin-bottom: 10px;
+        }
+
+        .energy-tips-section p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #bbb;
+        }
+
+        /* Tips Cards Container */
+        .tips-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* Individual Tip Card */
+        .tip-card {
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            width: 280px;
+            padding: 20px;
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+
+        .tip-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Tip Icon */
+        .tip-icon {
+            font-size: 2.5em;
+            color: #ff4c4c;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        /* Tip Title */
+        .tip-title {
+            font-size: 1.5em;
+            color: #ff4c4c;
+            margin-bottom: 10px;
+        }
+
+        /* Tip Description */
+        .tip-description {
+            font-size: 1em;
+            color: #ddd;
+            line-height: 1.6;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .tips-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Energy Tips Section -->
+<section class="energy-tips-section" id="energy-tips">
+    <h2>See Tips for More Energy</h2>
+    <p>Boost your energy naturally with these practical tips for a healthier, more vibrant you.</p>
+    <div class="tips-cards">
+
+        <!-- Tip Card 1 -->
+        <div class="tip-card">
+            <div class="tip-icon">💧</div>
+            <h3 class="tip-title">Stay Hydrated</h3>
+            <p class="tip-description">Drinking enough water throughout the day helps maintain your energy levels by preventing dehydration.</p>
+        </div>
+
+        <!-- Tip Card 2 -->
+        <div class="tip-card">
+            <div class="tip-icon">🍎</div>
+            <h3 class="tip-title">Eat Balanced Meals</h3>
+            <p class="tip-description">Fuel your body with nutrient-rich foods, including fruits, vegetables, lean proteins, and whole grains.</p>
+        </div>
+
+        <!-- Tip Card 3 -->
+        <div class="tip-card">
+            <div class="tip-icon">💤</div>
+            <h3 class="tip-title">Get Quality Sleep</h3>
+            <p class="tip-description">Adequate, restful sleep is essential for optimal energy levels and overall health.</p>
+        </div>
+
+        <!-- Tip Card 4 -->
+        <div class="tip-card">
+            <div class="tip-icon">🏋️</div>
+            <h3 class="tip-title">Exercise Regularly</h3>
+            <p class="tip-description">Physical activity boosts your stamina and releases endorphins that can elevate your mood and energy.</p>
+        </div>
+
+        <!-- Tip Card 5 -->
+        <div class="tip-card">
+            <div class="tip-icon">☀️</div>
+            <h3 class="tip-title">Get Sunlight</h3>
+            <p class="tip-description">Exposure to natural light helps regulate your sleep-wake cycle, improving daytime alertness.</p>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

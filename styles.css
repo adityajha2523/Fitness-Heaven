@@ -1,0 +1,204 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-bottom: 2px solid #e05a2b;
+}
+
+.header .logo img {
+    height: 80px;
+    width: 80px;
+}
+
+.header .nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.header .nav ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+    border-radius: 5px;
+}
+
+.header .nav ul li a:hover,
+.header .nav ul li .cta-button {
+    background-color: #e05a2b;
+    color: white;
+}
+
+/* Hero Section Styling */
+.hero {
+    padding-top: 60px;
+    background: url('https://cdn.pixabay.com/photo/2017/08/02/12/46/gym-2574747_1280.jpg') center/cover;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.hero button {
+    padding: 15px 30px;
+    font-size: 1.1em;
+    color: #1a1a1a;
+    background-color: #e05a2b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.hero button:hover {
+    transform: scale(1.1);
+}
+
+/* Zigzag Section Styling */
+.zigzag-section {
+    display: flex;
+    padding: 60px 20px;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 2px solid #333;
+}
+
+.zigzag-section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.zigzag-section .content {
+    flex: 1;
+    text-align: left;
+}
+
+.zigzag-section h2 {
+    font-size: 2em;
+    color: #e05a2b;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.zigzag-section p {
+    font-size: 1em;
+    color: #ddd;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+.zigzag-section a {
+    color: #e05a2b;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+.zigzag-section a:hover {
+    border-bottom: 2px solid #e05a2b;
+}
+
+.zigzag-section .image {
+    flex: 1;
+    position: relative;
+}
+
+/* Zigzag Section Image Styling */
+.zigzag-section .image img {
+    width: 90%; /* Reduces image width for better spacing */
+    height: auto; /* Maintains image aspect ratio */
+    max-height: 300px; /* Limits image height for consistency */
+    border-radius: 15px; /* Softer corners for a blended look */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Darker shadow for depth */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth image transitions */
+}
+
+/* Dark Overlay for Blending with Theme */
+.zigzag-section .image img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay for dark theme blend */
+    border-radius: 15px;
+}
+
+/* Zoom Effect on Hover */
+.zigzag-section .image:hover img {
+    transform: scale(1.05); /* Slight zoom on hover */
+    filter: brightness(0.9); /* Darkens the image on hover */
+}
+
+/* CTA Section Styling */
+.cta-section {
+    background-color: #e05a2b;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.cta-section h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.cta-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Additional styling for the Join button */
+.cta-section .join-button {
+    display: inline-block; /* Allows padding to work */
+    padding: 15px 30px; /* Padding for spacing */
+    font-size: 1.1em; /* Font size */
+    color: #1a1a1a; /* Text color */
+    background-color: #fff; /* White background */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition effects */
+    margin-top: 20px; /* Top margin for spacing */
+}
+
+.cta-section .join-button:hover {
+    background-color: #1a1a1a; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}

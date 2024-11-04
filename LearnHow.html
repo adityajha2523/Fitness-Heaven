@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce Stress and Boost Mood</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Mood Tips Section Styling */
+        .mood-tips-section {
+            max-width: 1000px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .mood-tips-section h2 {
+            font-size: 2.5em;
+            color: #e05a2b;
+            margin-bottom: 15px;
+        }
+
+        .mood-tips-section p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #bbb;
+        }
+
+        /* Tips Cards Container */
+        .tips-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* Individual Tip Card */
+        .tip-card {
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            width: 280px;
+            padding: 20px;
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+
+        .tip-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Tip Icon */
+        .tip-icon {
+            font-size: 2.5em;
+            color: #e05a2b;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        /* Tip Title */
+        .tip-title {
+            font-size: 1.5em;
+            color: #e05a2b;
+            margin-bottom: 10px;
+        }
+
+        /* Tip Description */
+        .tip-description {
+            font-size: 1em;
+            color: #ddd;
+            line-height: 1.6;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .tips-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Mood Tips Section -->
+<section class="mood-tips-section" id="mood-tips">
+    <h2>Reduce Stress and Boost Mood</h2>
+    <p>Discover simple and effective ways to alleviate stress and improve your mood.</p>
+    <div class="tips-cards">
+
+        <!-- Tip Card 1 -->
+        <div class="tip-card">
+            <div class="tip-icon">🧘</div>
+            <h3 class="tip-title">Practice Mindfulness</h3>
+            <p class="tip-description">Engage in mindfulness exercises like meditation and deep breathing to help reduce stress and calm the mind.</p>
+        </div>
+
+        <!-- Tip Card 2 -->
+        <div class="tip-card">
+            <div class="tip-icon">🌳</div>
+            <h3 class="tip-title">Spend Time Outdoors</h3>
+            <p class="tip-description">Exposure to nature can significantly lower stress levels and improve mental clarity and mood.</p>
+        </div>
+
+        <!-- Tip Card 3 -->
+        <div class="tip-card">
+            <div class="tip-icon">📅</div>
+            <h3 class="tip-title">Organize Your Day</h3>
+            <p class="tip-description">Planning tasks and setting achievable goals can reduce overwhelm and create a sense of control.</p>
+        </div>
+
+        <!-- Tip Card 4 -->
+        <div class="tip-card">
+            <div class="tip-icon">💪</div>
+            <h3 class="tip-title">Exercise Regularly</h3>
+            <p class="tip-description">Physical activity releases endorphins, improving mood and reducing symptoms of anxiety and depression.</p>
+        </div>
+
+        <!-- Tip Card 5 -->
+        <div class="tip-card">
+            <div class="tip-icon">🎨</div>
+            <h3 class="tip-title">Engage in Creative Activities</h3>
+            <p class="tip-description">Expressing yourself through art, writing, or music can provide an emotional outlet and elevate your mood.</p>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
